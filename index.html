@@ -10,7 +10,7 @@
 
     <title>Solo Heritage Trust</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,16 +22,28 @@
     <link href="carousel.css" rel="stylesheet">
     <link href="jumbotron.css" rel="stylesheet">
     <style>
-      div.inline {
+      body {
+        font-family: Georgia, serif;
+      }
+
+      p.inline, div.inline {
         display: inline-block;
       }
       .from-this {
-        width: 45%;
         disploy: inline-block;
       }
       .to-this {
-        width: 45%;
         disploy: inline-block;
+        align: right;
+      }
+      .sos-small {
+        font-size: 0.5em;
+      }
+      .img-rounded {
+        border-radius: 20px;
+      }
+      .sos-container {
+        margin: 10px;
       }
     </style>
   </head>
@@ -57,39 +69,87 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1>Save Our Solo</h1>
-        <div class="inline from-this">
-        <img width="400px" height="300px" title="Solo, rusting away" alt="Solo, rusting away" src="assets/images/rusty.png"/>
-        <p>From This.......</p>
+        <img class="img-rounded" width="400px" height="300px" title="Solo, rusting away" alt="Solo, rusting away" src="assets/images/rusty.png"/>
+      <div class="sos-container inline">
+        <h1>S<span class="sos-small">ave</span> O<span class="sos-small">ur</span> S<span class="sos-small">olo</span></h1>
+        <p class="from-this">From This..................To This</p>
       </div>
-      <div class="inline to-this">
-        <img width="400px" height="300px" title="Solo, shiny again!" alt="Solo, shiny again!" src="assets/images/shiny.png"/>
-        <p>......To This</p>
-      </div>
+        <img class="img-rounded" width="400px" height="300px" title="Solo, shiny again!" alt="Solo, shiny again!" src="assets/images/shiny.png"/>
 
       </div>
     </div>
 
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">G’day, <span class="text-muted">Welcome to the Solo Heritage Trust website.</span></h2>
+          <p class="lead"></p>
+<p>
+The purpose of this page is to bring you up to date on the Solo story and inform you of the plans for the Solo Heritage Trust and to seek your support for her preservation.
+Solo’s almost 60 year history began on the 19th June 1955…the day she was launched at Pyrmont Harbour in Sydney. Her famous history is encapsulated in Jock Sturrock’s words:
+</p>
+<p>
+        “Few yachts in the world could match Solo’s career as racer, cruiser and Antarctic explorer”
+</p>
+<p>
+Since her retirement in 1979 Solo was put to work as a charter yacht operating first in the Whitsundays and for the last 20 years on Moreton Bay in south east Queensland. Solo has now passed her time as a commercial vessel as newer designs make for faster boat speeds and greater comfort. Her time has come to retire to the ‘long yard’.
+</p>
+<p>
+Sadly the last few years have not been kind to Solo and she sits on the hardstand in a Brisbane shipyard melting away as the cancerous corrosion knaws at her steel. Several attempts have been made to pass her on to Australia’s Maritime institutions but all these efforts have failed and it now remains to a dedicated few to take the steps necessary to ensure the legend of Solo lives on.
+</p>
+<p>
+The Solo Heritage Trust is now a registered organisation and is in the process of seeking charitable status with the Australian Taxation Office.
+</p>
+<p>
+Ownership of the boat will be vested in the Trust whose objectives are to ensure her restoration to meet Queensland Maritime Survey requirements before launching. Once back in the water the Trust will hand over the operation to a third party who will manage her as a sailing vessel and undertake routine maintenance. 
+</p>
+<p>
+It is estimated that $100,000 will be needed to meet the restoration costs and the first years’ management. The Trust will do all that is possible to utilise volunteers both in the restoration and the management but the fixed costs are still expected to be high.
+</p>
+<p>
+Until the Trust gains charitable status the Trust is seeking financial pledges from the community which can be paid at a later date to gain the tax benefits.
+</p>
+<p>
+All donations will be acknowledged and displayed on board Solo with plaques being presented to larger donors.
+</p>
+<p>
+David Farley, a previous owner of Solo, has already agreed to donate $5000 a year for the next five years to the Trust.
+</p>
+<p>
+Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron Ship of Steel’. 
+</p>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-5">
+        <div class="">
+          <p>Become a</p>
+          <p><span class="gold medal">Gold</span>
+            sponsor for donations of $5000 or more.</p>
+          <p><span class="silver medal">Silver</span>
+            sponsor for donations of $3000-$5000.</p>
+          <p><span class="bronze medal">Bronze</span>
+            sponsor for donations of $1000-$3000.</p>
+          <p>Of course any donation is very welcome and gratefully received.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="">
+          <h2>Donate now</h2>
+          <p>(no tax benefit)</p>
+        </div><!-- /.col-lg-4 -->
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
       </div>
+
+
+      <!-- /END THE FEATURETTES -->
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -136,89 +196,6 @@
     </div><!-- /.carousel -->
 
 
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">G’day, <span class="text-muted">Welcome to the Solo Heritage Trust website.</span></h2>
-          <p class="lead"></p>
-<p>
-The purpose of this page is to bring you up to date on the Solo story and inform you of the plans for the Solo Heritage Trust and to seek your support for her preservation.
-Solo’s almost 60 year history began on the 19th June 1955…the day she was launched at Pyrmont Harbour in Sydney. Her famous history is encapsulated in Jock Sturrock’s words:
-</p>
-<p>
-        “Few yachts in the world could match Solo’s career as racer, cruiser and Antarctic explorer”
-</p>
-<p>
-Since her retirement in 1979 Solo was put to work as a charter yacht operating first in the Whitsundays and for the last 20 years on Moreton Bay in south east Queensland. Solo has now passed her time as a commercial vessel as newer designs make for faster boat speeds and greater comfort. Her time has come to retire to the ‘long yard’.
-</p>
-<p>
-Sadly the last few years have not been kind to Solo and she sits on the hardstand in a Brisbane shipyard melting away as the cancerous corrosion knaws at her steel. Several attempts have been made to pass her on to Australia’s Maritime institutions but all these efforts have failed and it now remains to a dedicated few to take the steps necessary to ensure the legend of Solo lives on.
-</p>
-<p>
-The Solo Heritage Trust is now a registered organisation and is in the process of seeking charitable status with the Australian Taxation Office.
-</p>
-<p>
-Ownership of the boat will be vested in the Trust whose objectives are to ensure her restoration to meet Queensland Maritime Survey requirements before launching. Once back in the water the Trust will hand over the operation to a third party who will manage her as a sailing vessel and undertake routine maintenance. 
-</p>
-<p>
-It is estimated that $100,000 will be needed to meet the restoration costs and the first years’ management. The Trust will do all that is possible to utilise volunteers both in the restoration and the management but the fixed costs are still expected to be high.
-</p>
-<p>
-Until the Trust gains charitable status the Trust is seeking financial pledges from the community which can be paid at a later date to gain the tax benefits.
-</p>
-<p>
-All donations will be acknowledged and displayed on board Solo with plaques being presented to larger donors.
-</p>
-<p>
-David Farley, a previous owner of Solo, has already agreed to donate $5000 a year for the next five years to the Trust.
-</p>
-<p>
-Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron Ship of Steel’. 
-</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -231,12 +208,12 @@ Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
