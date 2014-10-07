@@ -28,13 +28,27 @@
       .featurette-heading {
         margin-top: 15px;
       }
+      .sidebar-colour {
+        background-color: #C5E8FF;
+      }
+      .sidebar-grey {
+        background-color: #E6E9EB;
+      }
       .sidebar-module-inset {
         padding: 15px;
-        background-color: #E6E9EB;
         border-radius: 6px;
+        margin: 5px;
       }
       .jumbotron {
         background-color: #E6E9EB;
+      }
+      .jumbotron .sos {
+        width: 1200px;
+        max-width: none;
+        padding-left: 60px;
+      }
+      #myCarousel {
+        margin-top: 15px;
       }
       p.inline, div.inline {
         display: inline-block;
@@ -85,12 +99,18 @@
           <a class="navbar-brand" href="#">Solo Heritage Trust</a>
         </div>
         <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="RASNM843ZCQTG">
+              <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+            </form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
     <div class="jumbotron">
-      <div class="container">
+      <div id="sos" class="container sos">
         <img class="img-rounded" width="400px" height="300px" title="Solo, rusting away" alt="Solo, rusting away" src="assets/images/rusty.png"/>
       <div class="sos-container inline">
         <h1>S<span class="sos-small">ave</span> O<span class="sos-small">ur</span> S<span class="sos-small">olo</span></h1>
@@ -151,18 +171,25 @@ Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron 
 </p>
         </div>
         <div class="col-md-5">
-        <div class="sidebar-module-inset">
-          <p>Become a</p>
-          <p><span class="gold medal">Gold</span>
-            sponsor for donations of $5000 or more.</p>
-          <p><span class="silver medal">Silver</span>
-            sponsor for donations of $3000-$5000.</p>
-          <p><span class="bronze medal">Bronze</span>
-            sponsor for donations of $1000-$3000.</p>
-          <p>Of course any donation is very welcome and gratefully received.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="">
+          <div class="sidebar-colour sidebar-module-inset">
+            <p>Become a</p>
+            <p><span class="gold medal">Gold</span>
+              sponsor for donations of $5000 or more.</p>
+            <p><span class="silver medal">Silver</span>
+              sponsor for donations of $3000-$5000.</p>
+            <p><span class="bronze medal">Bronze</span>
+              sponsor for donations of $1000-$3000.</p>
+            <p>Of course any donation is very welcome and gratefully received.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sidebar-grey sidebar-module-inset">
+
           <h2>Donate now</h2>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="RASNM843ZCQTG">
+              <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+            </form>
           <p>(no tax benefit)</p>
         </div><!-- /.col-lg-4 -->
           <img class="featurette-image img-responsive" src="assets/images/under_sail.jpg" alt="Solo Under Sail">
