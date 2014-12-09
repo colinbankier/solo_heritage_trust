@@ -253,9 +253,16 @@ Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron 
     <div id="mayday-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content mayday-modal">
-          <video width="853" height="480" preload="auto" autoplay="autoplay" controls>
-            <source src="assets/mayday_export4.m4v" type="video/mp4">
-            Your browser does not support the video tag.
+          <video id="video-container" width="640" height="480" preload="auto" autoplay="autoplay" controls>
+            <source src="assets/videos/Mayday_for_Dropbox_mobile_Aps.m4v" type="video/mp4">
+            <source src="assets/videos/Mayday_for_iPhone_iPod_touch.m4v" type="video/mp4">
+            <source src="assets/videos/Mayday_for_Webm.webm" type="video/webm">
+            <source src="assets/videos/Mayday_for_Facebook.avi" type="video/avi">
+            <object width="640" height="480" type="application/x-shockwave-flash" data="assets/videos/Mayday_for_Flash.swf">
+                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                <param name="movie" value="assets/videos/Mayday_for_Flash.swf" />
+            </object>
+            Your browser does not support videos. Please click Skip.
           </video>
           <p>
           <a data-dismiss="modal" data-target="#mayday-modal" href="#">Skip video</a>
@@ -282,6 +289,9 @@ Kevin Bourke has agreed to donate $5 from every sale of his book ‘Man of Iron 
           console.log( "ready!" );
           $("#mayday-modal").modal({});
        });
+       $('#mayday-modal').on('hidden.bs.modal', function () {
+          $("#video-container")[0].pause();
+       })
     </script>
   </body>
 </html>
